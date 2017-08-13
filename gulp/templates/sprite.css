@@ -1,0 +1,16 @@
+/*Do not edit modules/_sprite directly as it is generated automatically by GULP. Instead edit gulp/templates/sprite */
+
+{{#shapes}} /* its a loop*/
+  {{#first}}
+    .icon {
+      background-image : url('/assets/images/sprites/{{{sprite}}}'); /*{{{sprite}}} is reason for get that icon path*/
+      /*{{first}} it will use for show the bg image path only once in css file  */
+    }
+  {{/first}}
+
+    .icon--{{base}}{
+      width: {{width.outer}}px;
+      height: {{height.outer}}px;
+      background-position : {{position.relative.xy}};
+    }
+{{/shapes}}
