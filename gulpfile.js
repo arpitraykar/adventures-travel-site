@@ -1,5 +1,6 @@
 require('./gulp/tasks/styles'); //no need of .js mention when we use require.
 require('./gulp/tasks/watch');
+require('./gulp/tasks/sprite');
 
 
 /*gulp.task('default', function(){
