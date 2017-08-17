@@ -2,7 +2,7 @@ var gulp = require("gulp"),
  gulpWatch = require("gulp-watch"),
  browserSync = require("browser-sync").create();
 
-gulp.task('gulpWatch', function(){
+gulp.task('Watch', function(){
 
   browserSync.init({
     notify : false,
