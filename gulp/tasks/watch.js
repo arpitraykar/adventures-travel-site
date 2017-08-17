@@ -2,7 +2,7 @@ var gulp = require("gulp"),
  gulpWatch = require("gulp-watch"),
  browserSync = require("browser-sync").create();
 
-gulp.task('gulpWatch', function(){
+gulp.task('Watch', function(){
 
   browserSync.init({
     notify : false,
@@ -10,11 +10,11 @@ gulp.task('gulpWatch', function(){
       baseDir :"./app"
     }
   })
-    gulpWatch('./app/index.html',function(){
+    Watch('./app/index.html',function(){
       browserSync.reload();
     }),
 
-    gulpWatch('./app/assets/styles/**/*.css',function(){
+    Watch('./app/assets/styles/**/*.css',function(){
       gulp.start('cssInject');
     })
 });
