@@ -1,8 +1,4 @@
-function person(){
-  this.greet : function(){
-    console.log("hey");
-  }
-}
 
-var me = new person();
-me.greet();
+
+import MobileMenu from './modules/MobileMenu';
+var mobileMenu = new MobileMenu();
