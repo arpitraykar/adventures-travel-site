@@ -3,12 +3,12 @@
 {{#shapes}} /* its a loop*/
   {{#first}}
     .icon {
-      background-image : url('/assets/images/sprites/{{{sprite}}}'); /*{{{sprite}}} is reason for get that icon path*/
+      background-image : url('../../assets/images/sprites/{{{sprite}}}'); /*{{{sprite}}} is reason for get that icon path*/
       /*{{first}} it will use for show the bg image path only once in css file  */
     }
 
     .no-svg .icon {
-      background-image : url('/assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+      background-image : url('../../assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
     }
   {{/first}}
 

@@ -4,12 +4,12 @@ var gulp = require('gulp'),
  dele = require('del'),
  svg2png = require('gulp-svg2png');
 
-var config ={
+var config = {
   shape: {
     spacing: {
       padding: 1
     }
-  }
+  },
   mode : {
     css: {
       variables: {
